@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "font1";
+  src: url(./layouts/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+$font1: "font1", sans-serif;
+$color1: rgb(27, 27, 27);
+$blue: rgb(65, 118, 255);
+$white: rgb(251, 251, 251);
+$grey: rgb(110, 110, 110);
+$grey2: rgb(31, 31, 31);
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin examples {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $font1;
+  overflow-x: hidden;
+
+  body {
+    background: rgb(27, 27, 27);
+    padding: 5px;
+  }
+}
+
+.btn {
+  border-radius: 30px;
+  font-size: 0.7rem;
+  padding: 8px 15px;
+  color: $white;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+#blue {
+  background: $blue;
+  border: none;
+}
+
+#empty {
+  background: none;
+  border: 1px $white solid;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: $white;
+  text-align: center;
+}
+
+.box {
+  background: $grey2;
+  padding: 30px 0px 30px 40px;
+  text-align: left;
+  border-radius: 10px;
+  width: 25%;
+}
+
+/*
+.title : pour les titres
+.btn : pour les boutons
+
+
+*/

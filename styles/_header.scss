@@ -1,0 +1,121 @@
+body {
+  min-height: 100vh;
+
+  header {
+    height: 100vh;
+    color: $white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: black;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      animation: anim-after-header 1s ease forwards;
+    }
+
+    @keyframes anim-after-header {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 92%;
+      margin: auto;
+      height: 60px;
+
+      h3 {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        height: 100%;
+
+        li {
+          margin-left: 50px;
+          padding: 6px;
+          cursor: pointer;
+          font-size: 0.8rem;
+
+          &:hover {
+            border-bottom: 1px solid $grey;
+          }
+        }
+      }
+    }
+
+    .header-m {
+      animation: anim-header-main 1.5s ease forwards;
+      transform: translateY(20px);
+      opacity: 0;
+
+      @keyframes anim-header-main {
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      .header-main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 30px;
+        margin-top: 65px;
+      }
+
+      .header-main-left {
+        h1 {
+          letter-spacing: 0.7px;
+          font-size: 2.3rem;
+        }
+
+        p {
+          color: $grey;
+          font-size: 0.8rem;
+          margin-top: 10px;
+        }
+
+        .btn-container {
+          margin-top: 17px;
+          display: grid;
+          grid-template-columns: 42% 42%;
+          width: 100%;
+        }
+      }
+
+      .header-main-right {
+        background: url(../layouts/img/main-img1-min.jpg) center/cover;
+        width: 280px;
+        height: 280px;
+        border-radius: 200px;
+      }
+    }
+
+    .scroll {
+      text-align: center;
+      margin-top: 55px;
+
+      h4 {
+        font-weight: lighter;
+        letter-spacing: 2px;
+      }
+
+      i {
+        width: 40px;
+        height: 40px;
+        color: $white;
+        margin-top: 7px;
+      }
+    }
+  }
+}
