@@ -16,19 +16,19 @@
 
 .btn {
   border-radius: 30px;
-  font-size: 0.7rem;
-  padding: 8px 15px;
+  font-size: 0.8rem;
+  padding: 10px 15px;
   color: rgb(251, 251, 251);
-  width: 100px;
+  width: 130px;
   cursor: pointer;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
 .btn:hover {
-  -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 #blue {
@@ -101,7 +101,7 @@ body header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 92%;
+  width: 90%;
   margin: auto;
   height: 60px;
 }
@@ -123,7 +123,7 @@ body header nav ul li {
   margin-left: 50px;
   padding: 6px;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body header nav ul li:hover {
   border-bottom: 1px solid rgb(110, 110, 110);
@@ -135,6 +135,7 @@ body header .header-m {
       -ms-transform: translateY(20px);
           transform: translateY(20px);
   opacity: 0;
+  margin-top: 80px;
 }
 @-webkit-keyframes anim-header-main {
   to {
@@ -159,28 +160,29 @@ body header .header-m .header-main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 30px;
-  margin-top: 65px;
+  padding: 0 40px;
 }
 body header .header-m .header-main-left h1 {
   letter-spacing: 0.7px;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 body header .header-m .header-main-left p {
   color: rgb(110, 110, 110);
-  font-size: 0.8rem;
-  margin-top: 10px;
+  font-size: 1.1rem;
+  margin-top: 12px;
 }
 body header .header-m .header-main-left .btn-container {
-  margin-top: 17px;
+  margin-top: 12px;
   display: grid;
   grid-template-columns: 42% 42%;
   width: 100%;
+  gap: 15px;
+  padding: 10px 2px;
 }
 body header .header-m .header-main-right {
   background: url(../layouts/img/main-img1-min.jpg) center/cover;
-  width: 280px;
-  height: 280px;
+  width: 330px;
+  height: 330px;
   border-radius: 200px;
 }
 body header .scroll {

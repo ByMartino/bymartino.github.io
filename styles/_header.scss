@@ -26,7 +26,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 92%;
+      width: 90%;
       margin: auto;
       height: 60px;
 
@@ -45,7 +45,7 @@ body {
           margin-left: 50px;
           padding: 6px;
           cursor: pointer;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
 
           &:hover {
             border-bottom: 1px solid $grey;
@@ -58,6 +58,7 @@ body {
       animation: anim-header-main 1.5s ease forwards;
       transform: translateY(20px);
       opacity: 0;
+      margin-top: 80px;
 
       @keyframes anim-header-main {
         to {
@@ -69,34 +70,35 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0 30px;
-        margin-top: 65px;
+        padding: 0 40px;
       }
 
       .header-main-left {
         h1 {
           letter-spacing: 0.7px;
-          font-size: 2.3rem;
+          font-size: 2.5rem;
         }
 
         p {
           color: $grey;
-          font-size: 0.8rem;
-          margin-top: 10px;
+          font-size: 1.1rem;
+          margin-top: 12px;
         }
 
         .btn-container {
-          margin-top: 17px;
+          margin-top: 12px;
           display: grid;
           grid-template-columns: 42% 42%;
           width: 100%;
+          gap: 15px;
+          padding: 10px 2px;
         }
       }
 
       .header-main-right {
         background: url(../layouts/img/main-img1-min.jpg) center/cover;
-        width: 280px;
-        height: 280px;
+        width: 330px;
+        height: 330px;
         border-radius: 200px;
       }
     }
